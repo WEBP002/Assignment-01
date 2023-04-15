@@ -28,8 +28,9 @@
             <img src="images/index/restaurant.jpg" alt="restaurant's interior with a view of the dining area" width="1500">
         </section>
 
+        <hr>
         <section id="special">
-            <h1>Daily Specials</h1>
+            <h2>Daily Specials</h2>
             <dl>
                 <img src="images/index/Seafood Paella.jpg" alt="seafood paella" width="500">
                 <dt>Seafood Paella</dt>
@@ -42,10 +43,11 @@
                 <dd>Drizzled with a lemon vinaigrette dressing</dd>
             </dl>
         </section>
-
+        
+        <hr>
 
         <section id="review">
-            <h1>Review</h1>
+            <h2>Review</h2>
             <p>★★★★★</p>
             <blockquote>"Restaurant XYZ is a great spot with delicious food and a cozy atmosphere. The service is friendly and the dishes are well-prepared with fresh ingredients. I'd definitely go back again!"</blockquote>
             <p>★★★★★</p>
@@ -54,31 +56,35 @@
             <blockquote>"The food at Restaurant XYZ is simply amazing. Each dish is prepared with care and attention to detail, and the flavors are out of this world."</blockquote>
         </section>
 
+        <hr>
         <section id="reservation">
-            <h1>Reservation</h1>
-            <form>
-                <div id="guests">
-                    <label for="guests">Number of Guests:</label>
-                    <input type="number" name="guests" min="1" max="10" required>  
-                </div> 
-                <div id="date">
-                    <label for="date">Date:</label>
-                    <input type="date" name="date" required>
-                </div>
-                <div id="time">
-                    <label for="time">Time:</label>
-                    <input type="time" name="time" required>
-                </div>
-                <div id="special-requests">
-                    <label for="special-requests">Special Requests or Dietary Restrictions:</label>
-                    <textarea name="special-requests" placeholder=""></textarea>
-                </div>
-                <button type="submit">Submit</button>
+            <h2>Reservation</h2>
+            <form action="/" method="get">
+                <fieldset>
+                    <div id="guests">
+                        <label for="guests">Number of Guests:</label>
+                        <input type="number" name="guests" id="guests" min="1" max="10" required>  
+                    </div> 
+                    <div id="date">
+                        <label for="date">Date:</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div id="time">
+                        <label for="time">Time:</label>
+                        <input type="time" name="time" id="time" required>
+                    </div>
+                    <div id="special-requests">
+                        <label for="special-requests">Special Requests or Dietary Restrictions:</label>
+                        <textarea name="special-requests" id="special-requests" placeholder=""></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </fieldset>
               </form>
         </section>
 
+        <hr>
         <section id="table">
-            <h1>Table</h1>
+            <h2>Table</h2>
             <dl>
                 <img src="images/index/grilled salmon.jpg" alt="grilled salmon" width="500">
                 <dt>Grilled Salmon</dt>
@@ -88,8 +94,10 @@
                 <dd>Creamy Arborio rice cooked with fresh mushrooms and topped with shaved Parmesan cheese.</dd>
             </dl>
         </section>
-            
+        
+        <hr>
         <section id="video">
+            <h2>Video</h2>
             <video
             src="https://www.shutterstock.com/shutterstock/videos/1029702146/preview/stock-footage-chef-decorating-cake-at-kitchen-closeup-male-chef-making-dessert-in-slow-motion-professional-cook.webm"
             autoplay
@@ -98,8 +106,9 @@
             </video>
         </section>
 
+        <hr>
         <section id="audio">
-            <h1>Background Music Playlist</h1>
+            <h2>Background Music Playlist</h2>
             <ol>
                 <li>
                     <audio controls>
@@ -122,42 +131,50 @@
             </ol>
         </section>
 
+        <hr>
         <section id="Description">
-            <h1>Description</h1>
+            <h2>Description</h2>
 
-            <div>Location</div>
-            <address>Address: 209, Neungdong-ro, Gwangjin-gu, Seoul, Republic of Korea</address>
+            <div id="opening hours">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>MONDAY-FRIDAY 9:00am - 8:00pm</li>
+                    <li>SATURDAY&SUNDAY 10:00am - 4:00pm</li>
+                </ul>
+            </div>
 
-            <div>Opening Hours</div>
-            <ul>
-                <li>MONDAY-FRIDAY 9:00am - 8:00pm</li>
-                <li>SATURDAY&SUNDAY 10:00am - 4:00pm</li>
-            </ul>
+            <div id="address">
+                <address>
+                    <ul type="square">
+                        <li>Phone: <span><a href="tel:555-123-4567">555-123-4567</a></span></li>
+                        <li>Email: <span><a href="mailto:info@ourrestaurant.com">info@ourrestaurant1.com<a></span></li>
+                        <li>Address: <span>209, Neungdong-ro, Gwangjin-gu, Seoul, Republic of Korea</span></li>
+                    </ul>
+                </address>
+            </div>
+            
+            
+            <div id="awards">
+                <h3>Awards</h3>
+                <ul>
+                    <li>Best of the City - awarded by the city's magazine for the restaurant's overall excellence</li>
+                    <li>Certificate of Excellence - awarded by a popular travel review website based on consistently high ratings and reviews from customers.</li>
+                    <li>Best New Restaurant - awarded by the city's restaurant guide</li>
+                </ul>
+            </div>
 
-            <div>Phone Number</div>
-            <a href="tel:555-123-4567">555-123-4567</a>
-
-            <div>Email Address</div>
-            <a href="mailto:info@ourrestaurant.com">info@ourrestaurant1.com<a>
-
-            <div>Awards</div>
-            <ul>
-                <li>Best of the City - awarded by the city's magazine for the restaurant's overall excellence</li>
-                <li>Certificate of Excellence - awarded by a popular travel review website based on consistently high ratings and reviews from customers.</li>
-                <li>Best New Restaurant - awarded by the city's restaurant guide</li>
-            </ul>
-
-            <div>Suppliers</div>
-            <p>
-                Restaurant XYZ takes pride in using only the freshest and highest quality ingredients for their dishes.
-                To ensure this, they have partnered with local farms and fisheries for their produce and seafood.
-                You can learn more about their suppliers by clicking on the links below:
-            </p>
-            <ul>
-                <li>Local farm : <a href="https://www.farmfreshproduce.com" target="_blank">www.farmfreshproduce.com</a></li>
-                <li>Fishery : <a href="https://www.freshseafood.com" target="_blank">www.freshseafood.com</a></li>
-            </ul>
-
+            <div id="suppliers">
+                <h3>Suppliers</h3>
+                <p>
+                    Restaurant XYZ takes pride in using only the freshest and highest quality ingredients for their dishes.
+                    To ensure this, they have partnered with local farms and fisheries for their produce and seafood.
+                    You can learn more about their suppliers by clicking on the links below:
+                </p>
+                <ul>
+                    <li>Local farm : <a href="https://www.farmfreshproduce.com" target="_blank">www.farmfreshproduce.com</a></li>
+                    <li>Fishery : <a href="https://www.freshseafood.com" target="_blank">www.freshseafood.com</a></li>
+                </ul>
+          </div>
             
         </section>
     </main>
