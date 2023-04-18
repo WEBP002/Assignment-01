@@ -25,27 +25,41 @@
     <main>
         <section id="welcome">
             <h1>Welcome to Restaurant XYZ, where every dish is a masterpiece</h1>
-            <img src="images/index/restaurant.jpg" alt="restaurant's interior with a view of the dining area" width="1500">
+            <figure>
+                <img src="images/index/restaurant.jpg" alt="restaurant's interior with a view of the dining area" width="1500">
+                <figcaption>
+                    <abbr title="Restaurant XYZ">XYZ</abbr>'s dining area
+                </figcaption>
+            </figure>
         </section>
 
+        <hr>
         <section id="special">
-            <h1>Daily Specials</h1>
+            <h2>Daily Specials</h2>
             <dl>
-                <img src="images/index/Seafood Paella.jpg" alt="seafood paella" width="500">
-                <dt>Seafood Paella</dt>
-                <dd>Spanish-style rice dish with saffron, shrimp, mussels, and calamari</dd>
-                <dd>Served with a side of garlic bread and grilled asparagus</dd>
-
-                <img src="images/index/octopus salad.jpg" alt="grilled octopus salad" width="500">
-                <dt>Grilled Octopus Salad</dt>
-                <dd>Grilled octopus tentacles served on a bed of mixed greens, cherry tomatoes, red onion, and Kalamata olives</dd>
-                <dd>Drizzled with a lemon vinaigrette dressing</dd>
+                <figure>
+                    <img src="images/index/Seafood Paella.jpg" alt="seafood paella" width="500">
+                    <figcaption>
+                        <dt><strong>Seafood Paella</strong></dt>
+                        <dd>Spanish-style rice dish with saffron, shrimp, mussels, and calamari</dd>
+                        <dd>Served with a side of garlic bread and grilled asparagus</dd>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/index/octopus salad.jpg" alt="grilled octopus salad" width="500">
+                    <figcaption>
+                        <dt><strong>Grilled Octopus Salad</strong></dt>
+                        <dd>Grilled octopus tentacles served on a bed of mixed greens, cherry tomatoes, red onion, and Kalamata olives</dd>
+                        <dd>Drizzled with a lemon vinaigrette dressing</dd>
+                    </figcaption>
+                </figure>
             </dl>
         </section>
-
+        
+        <hr>
 
         <section id="review">
-            <h1>Review</h1>
+            <h2>Review</h2>
             <p>★★★★★</p>
             <blockquote>"Restaurant XYZ is a great spot with delicious food and a cozy atmosphere. The service is friendly and the dishes are well-prepared with fresh ingredients. I'd definitely go back again!"</blockquote>
             <p>★★★★★</p>
@@ -54,110 +68,159 @@
             <blockquote>"The food at Restaurant XYZ is simply amazing. Each dish is prepared with care and attention to detail, and the flavors are out of this world."</blockquote>
         </section>
 
+        <hr>
         <section id="reservation">
-            <h1>Reservation</h1>
-            <form>
-                <div id="guests">
-                    <label for="guests">Number of Guests:</label>
-                    <input type="number" name="guests" min="1" max="10" required>  
-                </div> 
-                <div id="date">
-                    <label for="date">Date:</label>
-                    <input type="date" name="date" required>
-                </div>
-                <div id="time">
-                    <label for="time">Time:</label>
-                    <input type="time" name="time" required>
-                </div>
-                <div id="special-requests">
-                    <label for="special-requests">Special Requests or Dietary Restrictions:</label>
-                    <textarea name="special-requests" placeholder=""></textarea>
-                </div>
-                <button type="submit">Submit</button>
+            <h2>Reservation</h2>
+            <form action="/" method="get">
+                <fieldset>
+                    <div id="guests">
+                        <label for="guests">Number of Guests:</label>
+                        <input type="number" name="guests" id="guests" min="1" max="10" required>  
+                    </div> 
+                    <div id="date">
+                        <label for="date">Date:</label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div id="time">
+                        <label for="time">Time:</label>
+                        <input type="time" name="time" id="time" required>
+                    </div>
+                    <div id="special-requests">
+                        <label for="special-requests">Special Requests or Dietary Restrictions:</label>
+                        <textarea name="special-requests" id="special-requests" placeholder=""></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </fieldset>
               </form>
         </section>
 
+        <hr>
         <section id="table">
-            <h1>Table</h1>
-            <dl>
-                <img src="images/index/grilled salmon.jpg" alt="grilled salmon" width="500">
-                <dt>Grilled Salmon</dt>
-                <dd>Our fresh salmon fillet is grilled to perfection and served with a side of roasted vegetables.</dd>
-                <img src="images/index/mushroom risotto.jpg" alt="mushroom risotto" width="500">
-                <dt>Mushroom Risotto</dt>
-                <dd>Creamy Arborio rice cooked with fresh mushrooms and topped with shaved Parmesan cheese.</dd>
-            </dl>
+            <h2>Menu Table</h2>
+            <table cellpadding="5">
+                <thead>
+                  <tr>
+                    <th>Appetizers</th>
+                    <th>Entrees</th>
+                    <th>Desserts</th>
+                    <th>Drinks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Stuffed Mushrooms</td>
+                    <td>Grilled Salmon</td>
+                    <td>Tiramisu</td>
+                    <td>Wines</td>
+                  </tr>
+                  <tr>
+                    <td>Shrimp Cocktail</td>
+                    <td>Filet Mignon</td>
+                    <td>Crème Brûlée</td>
+                    <td>Beers</td>
+                  </tr>
+                  <tr>
+                    <td>Bruschetta</td>
+                    <td>Chicken Parmesan</td>
+                    <td>Chocolate Lava Cake</td>
+                    <td>Cocktails</td>
+                  </tr>
+                </tbody>
+              </table>
+              
         </section>
-            
+        
+        <hr>
         <section id="video">
-            <video
-            src="https://www.shutterstock.com/shutterstock/videos/1029702146/preview/stock-footage-chef-decorating-cake-at-kitchen-closeup-male-chef-making-dessert-in-slow-motion-professional-cook.webm"
-            autoplay
-            controls
-            alt="chefs in action and the dishes being prepared">
-            </video>
+            <h2>Video</h2>
+            <figure>
+                <video src="https://www.shutterstock.com/shutterstock/videos/1029702146/preview/stock-footage-chef-decorating-cake-at-kitchen-closeup-male-chef-making-dessert-in-slow-motion-professional-cook.webm"
+                       autoplay controls alt="chefs in action and the dishes being prepared">
+                </video>
+                <figcaption>A video of chefs in action and the dishes being prepared.</figcaption>
+            </figure>
         </section>
 
+        <hr>
         <section id="audio">
-            <h1>Background Music Playlist</h1>
+            <h2>Background Music Playlist</h2>
             <ol>
                 <li>
-                    <audio controls>
-                        <source src="audios/song1.mp3" type="audio/mpeg">
+                  <figure>
+                    <audio controls loop>
+                        <source src="audios/Confident Kurt - TrackTribe.mp3" type="audio/mpeg">
+                        Confident Kurt - TrackTribe
                     </audio>
-                    <p>Song 1</p>
+                    <figcaption>Confident Kurt - TrackTribe</figcaption>
+                  </figure>
                 </li>
                 <li>
-                    <audio controls>
-                        <source src="audios/song2.mp3" type="audio/mpeg">
+                  <figure>
+                    <audio controls loop>
+                        <source src="audios/Fine Dining - TrackTribe.mp3" type="audio/mpeg">
+                        Fine Dining - TrackTribe
                     </audio>
-                    <p>Song 2</p>
+                    <figcaption>Fine Dining - TrackTribe</figcaption>
+                  </figure>
                 </li>
                 <li>
-                    <audio controls>
-                        <source src="audios/song3.mp3" type="audio/mpeg">
+                  <figure>
+                    <audio controls loop>
+                        <source src="audios/Lost Lounge - TrackTribe.mp3" type="audio/mpeg">
+                        Lost Lounge - TrackTribe
                     </audio>
-                    <p>Song 3</p>
+                    <figcaption>Lost Lounge - TrackTribe</figcaption>
+                  </figure>
                 </li>
-            </ol>
+              </ol>
+              
         </section>
 
+        <hr>
         <section id="Description">
-            <h1>Description</h1>
+            <h2>Description of <abbr title="Restaurant XYZ">XYZ</abbr></h2>
 
-            <div>Location</div>
-            <address>Address: 209, Neungdong-ro, Gwangjin-gu, Seoul, Republic of Korea</address>
+            <div id="opening hours">
+                <h3>Opening Hours</h3>
+                <ul>
+                    <li>MONDAY-FRIDAY 9:00am - 8:00pm</li>
+                    <li>SATURDAY&SUNDAY 10:00am - 4:00pm</li>
+                </ul>
+            </div>
 
-            <div>Opening Hours</div>
-            <ul>
-                <li>MONDAY-FRIDAY 9:00am - 8:00pm</li>
-                <li>SATURDAY&SUNDAY 10:00am - 4:00pm</li>
-            </ul>
+            <div id="address">
+                <h3>Address</h3>
+                <address>
+                    <ul>
+                        <li>Phone: <span><a href="tel:555-123-4567">555-123-4567</a></span></li>
+                        <li>Email: <span><a href="mailto:info@ourrestaurant.com">info@ourrestaurant1.com</a></span></li>
+                        <li>Address: <span>209, Neungdong-ro, Gwangjin-gu, Seoul, Republic of Korea</span></li>
+                    </ul>
+                </address>
+            </div>
+            
+            
+            <div id="awards">
+                <h3>Awards</h3>
+                <ul>
+                    <li>Best of the City - awarded by the city's magazine for the restaurant's overall excellence</li>
+                    <li>Certificate of Excellence - awarded by a popular travel review website based on consistently high ratings and reviews from customers.</li>
+                    <li>Best New Restaurant - awarded by the city's restaurant guide</li>
+                </ul>
+            </div>
 
-            <div>Phone Number</div>
-            <a href="tel:555-123-4567">555-123-4567</a>
-
-            <div>Email Address</div>
-            <a href="mailto:info@ourrestaurant.com">info@ourrestaurant1.com<a>
-
-            <div>Awards</div>
-            <ul>
-                <li>Best of the City - awarded by the city's magazine for the restaurant's overall excellence</li>
-                <li>Certificate of Excellence - awarded by a popular travel review website based on consistently high ratings and reviews from customers.</li>
-                <li>Best New Restaurant - awarded by the city's restaurant guide</li>
-            </ul>
-
-            <div>Suppliers</div>
-            <p>
-                Restaurant XYZ takes pride in using only the freshest and highest quality ingredients for their dishes.
-                To ensure this, they have partnered with local farms and fisheries for their produce and seafood.
-                You can learn more about their suppliers by clicking on the links below:
-            </p>
-            <ul>
-                <li>Local farm : <a href="https://www.farmfreshproduce.com" target="_blank">www.farmfreshproduce.com</a></li>
-                <li>Fishery : <a href="https://www.freshseafood.com" target="_blank">www.freshseafood.com</a></li>
-            </ul>
-
+            <div id="suppliers">
+                <h3>Suppliers</h3>
+                <p>
+                    Restaurant XYZ takes pride in using only the freshest and highest quality ingredients for their dishes.
+                    To ensure this, they have partnered with local farms and fisheries for their produce and seafood.
+                    You can learn more about their suppliers by clicking on the links below:
+                </p>
+                <ul>
+                    <li>Local farm : <a href="https://www.farmfreshproduce.com" target="_blank">www.farmfreshproduce.com</a></li>
+                    <li>Fishery : <a href="https://www.freshseafood.com" target="_blank">www.freshseafood.com</a></li>
+                </ul>
+          </div>
             
         </section>
     </main>
@@ -176,7 +239,7 @@
             <address>
                 <ul type="square">
                     <li>Phone: <span><a href="tel:555-123-4567">555-123-4567</a></span></li>
-                    <li>Email: <span><a href="mailto:info@ourrestaurant.com">info@ourrestaurant1.com<a></span></li>
+                    <li>Email: <span><a href="mailto:info@ourrestaurant.com">info@ourrestaurant1.com</span></a></span></li>
                     <li>Address: <span>209, Neungdong-ro, Gwangjin-gu, Seoul, Republic of Korea</span></li>
                 </ul>
             </address>
