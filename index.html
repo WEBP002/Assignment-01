@@ -29,8 +29,8 @@
                 <img
                     srcset="images/index/restaurant1000w.jpg 1000w,
                     images/index/restaurant2000w.jpg 2000w,
-                    images/index/restaurant3000w.jpg 3000w"
-                    sizes="100vw",
+                    images/index/restaurant3000w.jpg 3000w" 
+                    sizes="100vw" 
                     src="images/index/restaurant2000w.jpg"
                     alt="restaurant's interior with a view of the dining area">
                 <figcaption>
@@ -42,24 +42,22 @@
         <hr>
         <section id="special">
             <h2>Daily Specials</h2>
-            <dl>
-                <figure>
-                    <img src="images/index/Seafood Paella.jpg" alt="seafood paella" width="500">
-                    <figcaption>
-                        <dt><strong>Seafood Paella</strong></dt>
-                        <dd>Spanish-style rice dish with saffron, shrimp, mussels, and calamari</dd>
-                        <dd>Served with a side of garlic bread and grilled asparagus</dd>
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img src="images/index/octopus salad.jpg" alt="grilled octopus salad" width="500">
-                    <figcaption>
-                        <dt><strong>Grilled Octopus Salad</strong></dt>
-                        <dd>Grilled octopus tentacles served on a bed of mixed greens, cherry tomatoes, red onion, and Kalamata olives</dd>
-                        <dd>Drizzled with a lemon vinaigrette dressing</dd>
-                    </figcaption>
-                </figure>
-            </dl>
+            <figure>
+                <img src="images/index/Seafood_Paella.jpg" alt="seafood paella" width="500">
+                <figcaption>
+                    <strong>Seafood Paella</strong>
+                    <div>Spanish-style rice dish with saffron, shrimp, mussels, and calamari</div>
+                    <div>Served with a side of garlic bread and grilled asparagus</div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="images/index/octopus_salad.jpg" alt="grilled octopus salad" width="500">
+                <figcaption>
+                    <strong>Grilled Octopus Salad</strong>
+                    <div>Grilled octopus tentacles served on a bed of mixed greens, cherry tomatoes, red onion, and Kalamata olives</div>
+                    <div>Drizzled with a lemon vinaigrette dressing</div>
+                </figcaption>
+            </figure>
         </section>
         
         <hr>
@@ -80,20 +78,24 @@
             <form action="/" method="get">
                 <fieldset>
                     <div id="guests">
-                        <label for="guests">Number of Guests:</label>
-                        <input type="number" name="guests" id="guests" min="1" max="10" required>  
+                        <label>Number of Guests:
+                            <input type="number" name="guests" id="guests_input" min="1" max="10" required>  
+                        </label>
                     </div> 
                     <div id="date">
-                        <label for="date">Date:</label>
-                        <input type="date" name="date" id="date" required>
+                        <label>Date:
+                            <input type="date" name="date" id="date_input" required>
+                        </label>
                     </div>
                     <div id="time">
-                        <label for="time">Time:</label>
-                        <input type="time" name="time" id="time" required>
+                        <label>Time:
+                            <input type="time" name="time" id="time_input" required>
+                        </label>
                     </div>
                     <div id="special-requests">
-                        <label for="special-requests">Special Requests or Dietary Restrictions:</label>
-                        <textarea name="special-requests" id="special-requests" placeholder=""></textarea>
+                        <label>Special Requests or Dietary Restrictions:
+                            <textarea name="special-requests" id="special-requests_input" placeholder=""></textarea>
+                        </label>
                     </div>
                     <button type="submit">Submit</button>
                 </fieldset>
@@ -103,7 +105,7 @@
         <hr>
         <section id="table">
             <h2>Menu Table</h2>
-            <table cellpadding="5">
+            <table>
                 <thead>
                   <tr>
                     <th>Appetizers</th>
@@ -141,7 +143,7 @@
             <h2>Video</h2>
             <figure>
                 <video src="https://www.shutterstock.com/shutterstock/videos/1029702146/preview/stock-footage-chef-decorating-cake-at-kitchen-closeup-male-chef-making-dessert-in-slow-motion-professional-cook.webm"
-                       autoplay controls alt="chefs in action and the dishes being prepared">
+                       autoplay controls>
                 </video>
                 <figcaption>A video of chefs in action and the dishes being prepared.</figcaption>
             </figure>
@@ -154,16 +156,16 @@
                 <li>
                   <figure>
                     <audio controls loop>
-                        <source src="audios/Confident Kurt - TrackTribe.mp3" type="audio/mpeg">
+                        <source src="audios/ConfidentKurt-TrackTribe.mp3" type="audio/mpeg">
                         Confident Kurt - TrackTribe
                     </audio>
-                    <figcaption>Confident Kurt - TrackTribe</figcaption>
+                    <figcaption>ConfidentKurt-TrackTribe</figcaption>
                   </figure>
                 </li>
                 <li>
                   <figure>
                     <audio controls loop>
-                        <source src="audios/Fine Dining - TrackTribe.mp3" type="audio/mpeg">
+                        <source src="audios/FineDining-TrackTribe.mp3" type="audio/mpeg">
                         Fine Dining - TrackTribe
                     </audio>
                     <figcaption>Fine Dining - TrackTribe</figcaption>
@@ -172,7 +174,7 @@
                 <li>
                   <figure>
                     <audio controls loop>
-                        <source src="audios/Lost Lounge - TrackTribe.mp3" type="audio/mpeg">
+                        <source src="audios/LostLounge-TrackTribe.mp3" type="audio/mpeg">
                         Lost Lounge - TrackTribe
                     </audio>
                     <figcaption>Lost Lounge - TrackTribe</figcaption>
@@ -186,7 +188,7 @@
         <section id="Description">
             <h2>Description of <abbr title="Restaurant XYZ">XYZ</abbr></h2>
 
-            <div id="opening hours">
+            <div id="opening_hours">
                 <h3>Opening Hours</h3>
                 <ul>
                     <li>MONDAY-FRIDAY 9:00am - 8:00pm</li>
@@ -234,30 +236,36 @@
     <footer>
         <h3>More Infos</h3>
         <ul>
-            <li>Opening Hours</li>
-            <ul>
-                <li>MONDAY-FRIDAY</li>
-                <p>9:00am - 8:00pm</p>
-                <li>SATURDAY&SUNDAY</li>
-                <p>10:00am - 4:00pm</p>
-            </ul>
-            <li>Contact Information</li>
-            <address>
-                <ul type="square">
-                    <li>Phone: <span><a href="tel:555-123-4567">555-123-4567</a></span></li>
-                    <li>Email: <span><a href="mailto:info@ourrestaurant.com">info@ourrestaurant1.com</span></a></span></li>
-                    <li>Address: <span>209, Neungdong-ro, Gwangjin-gu, Seoul, Republic of Korea</span></li>
+            <li>Opening Hours
+                <ul>
+                    <li>MONDAY-FRIDAY
+                        <p>9:00am - 8:00pm</p>
+                    </li>
+                    <li>SATURDAY&SUNDAY
+                        <p>10:00am - 4:00pm</p>
+                    </li>
                 </ul>
-            </address>
-            <li>Social Media Links</li>
-            <a href="https://ko-kr.facebook.com/" target="_blank"><img src="images/logos/facebook.png" alt="facebook"
-                    height="50" /></a>
-            <a href="https://www.instagram.com/?hl=ko" target="_blank"><img src="images/logos/instagram.png"
-                    alt="instagram" height="50" /></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="images/logos/youtube.png" alt="youtube"
-                    height="50"></a>
-            <a href="https://twitter.com/?lang=ko" target="_blank"><img src="images/logos/twitter.png" alt="twitter"
-                    height="50"></a>
+            </li>
+            <li>Contact Information
+                <address>
+                    <ul type="square">
+                        <li>Phone: <span><a href="tel:555-123-4567">555-123-4567</a></span></li>
+                        <li>Email: <span><a href="mailto:info@ourrestaurant.com">info@ourrestaurant1.com</a></span></li>
+                        <li>Address: <span>209, Neungdong-ro, Gwangjin-gu, Seoul, Republic of Korea</span></li>
+                    </ul>
+                </address>
+            </li>
+            <li>Social Media Links
+                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="images/logos/facebook.png"
+                        alt="facebook" height="50" /></a>
+                <a href="https://www.instagram.com/?hl=ko" target="_blank"><img src="images/logos/instagram.png"
+                        alt="instagram" height="50" /></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="images/logos/youtube.png" alt="youtube"
+                        height="50"></a>
+                <a href="https://twitter.com/?lang=ko" target="_blank"><img src="images/logos/twitter.png" alt="twitter"
+                        height="50"></a>
+            </li>
+
         </ul>
 
 
