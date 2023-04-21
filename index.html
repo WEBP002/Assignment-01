@@ -1,18 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg" href="images/logos/logo.svg" sizes="32x32">
-    <title>The Best Restaurant in Town</title>
+    <title>Restaurant XYZ</title>
 </head>
 
 <body>
     <header>
-        <a href="/"><img src="images/logos/logo.svg" alt="The Best Restaurant in Town" height="150" /></a>
+        <a href="#">
+            <picture>
+                <source type="images/svg+xml" srcset="logo.svg">
+                <source type="images/png" srcset="logo.png">
+                <img src="images/logos/logo.jpg" alt="Restaurant XYZ" height="150">
+            </picture>
+        </a>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -26,12 +31,9 @@
         <section id="welcome">
             <h1>Welcome to Restaurant XYZ, where every dish is a masterpiece</h1>
             <figure>
-                <img
-                    srcset="images/index/restaurant1000w.jpg 1000w,
+                <img srcset="images/index/restaurant1000w.jpg 1000w,
                     images/index/restaurant2000w.jpg 2000w,
-                    images/index/restaurant3000w.jpg 3000w" 
-                    sizes="100vw" 
-                    src="images/index/restaurant2000w.jpg"
+                    images/index/restaurant3000w.jpg 3000w" sizes="100vw" src="images/index/restaurant2000w.jpg"
                     alt="restaurant's interior with a view of the dining area">
                 <figcaption>
                     <abbr title="Restaurant XYZ">XYZ</abbr>'s dining area
@@ -54,22 +56,27 @@
                 <img src="images/index/octopus_salad.jpg" alt="grilled octopus salad" width="500">
                 <figcaption>
                     <strong>Grilled Octopus Salad</strong>
-                    <div>Grilled octopus tentacles served on a bed of mixed greens, cherry tomatoes, red onion, and Kalamata olives</div>
+                    <div>Grilled octopus tentacles served on a bed of mixed greens, cherry tomatoes, red onion, and
+                        Kalamata olives</div>
                     <div>Drizzled with a lemon vinaigrette dressing</div>
                 </figcaption>
             </figure>
         </section>
-        
+
         <hr>
 
         <section id="review">
             <h2>Review</h2>
             <p>★★★★★</p>
-            <blockquote>"Restaurant XYZ is a great spot with delicious food and a cozy atmosphere. The service is friendly and the dishes are well-prepared with fresh ingredients. I'd definitely go back again!"</blockquote>
+            <blockquote>"Restaurant XYZ is a great spot with delicious food and a cozy atmosphere. The service is
+                friendly and the dishes are well-prepared with fresh ingredients. I'd definitely go back again!"
+            </blockquote>
             <p>★★★★★</p>
-            <blockquote>"I've been coming to Restaurant XYZ for years and I'm always blown away by the quality of the food and the impeccable service"</blockquote>
+            <blockquote>"I've been coming to Restaurant XYZ for years and I'm always blown away by the quality of the
+                food and the impeccable service"</blockquote>
             <p>★★★★★</p>
-            <blockquote>"The food at Restaurant XYZ is simply amazing. Each dish is prepared with care and attention to detail, and the flavors are out of this world."</blockquote>
+            <blockquote>"The food at Restaurant XYZ is simply amazing. Each dish is prepared with care and attention to
+                detail, and the flavors are out of this world."</blockquote>
         </section>
 
         <hr>
@@ -79,9 +86,9 @@
                 <fieldset>
                     <div id="guests">
                         <label>Number of Guests:
-                            <input type="number" name="guests" id="guests_input" min="1" max="10" required>  
+                            <input type="number" name="guests" id="guests_input" min="1" max="10" required>
                         </label>
-                    </div> 
+                    </div>
                     <div id="date">
                         <label>Date:
                             <input type="date" name="date" id="date_input" required>
@@ -99,7 +106,7 @@
                     </div>
                     <button type="submit">Submit</button>
                 </fieldset>
-              </form>
+            </form>
         </section>
 
         <hr>
@@ -107,43 +114,44 @@
             <h2>Menu Table</h2>
             <table>
                 <thead>
-                  <tr>
-                    <th>Appetizers</th>
-                    <th>Entrees</th>
-                    <th>Desserts</th>
-                    <th>Drinks</th>
-                  </tr>
+                    <tr>
+                        <th>Appetizers</th>
+                        <th>Entrees</th>
+                        <th>Desserts</th>
+                        <th>Drinks</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Stuffed Mushrooms</td>
-                    <td>Grilled Salmon</td>
-                    <td>Tiramisu</td>
-                    <td>Wines</td>
-                  </tr>
-                  <tr>
-                    <td>Shrimp Cocktail</td>
-                    <td>Filet Mignon</td>
-                    <td>Crème Brûlée</td>
-                    <td>Beers</td>
-                  </tr>
-                  <tr>
-                    <td>Bruschetta</td>
-                    <td>Chicken Parmesan</td>
-                    <td>Chocolate Lava Cake</td>
-                    <td>Cocktails</td>
-                  </tr>
+                    <tr>
+                        <td>Stuffed Mushrooms</td>
+                        <td>Grilled Salmon</td>
+                        <td>Tiramisu</td>
+                        <td>Wines</td>
+                    </tr>
+                    <tr>
+                        <td>Shrimp Cocktail</td>
+                        <td>Filet Mignon</td>
+                        <td>Crème Brûlée</td>
+                        <td>Beers</td>
+                    </tr>
+                    <tr>
+                        <td>Bruschetta</td>
+                        <td>Chicken Parmesan</td>
+                        <td>Chocolate Lava Cake</td>
+                        <td>Cocktails</td>
+                    </tr>
                 </tbody>
-              </table>
-              
+            </table>
+
         </section>
-        
+
         <hr>
         <section id="video">
             <h2>Video</h2>
             <figure>
-                <video src="https://www.shutterstock.com/shutterstock/videos/1029702146/preview/stock-footage-chef-decorating-cake-at-kitchen-closeup-male-chef-making-dessert-in-slow-motion-professional-cook.webm"
-                       autoplay controls>
+                <video
+                    src="https://www.shutterstock.com/shutterstock/videos/1029702146/preview/stock-footage-chef-decorating-cake-at-kitchen-closeup-male-chef-making-dessert-in-slow-motion-professional-cook.webm"
+                    autoplay controls>
                 </video>
                 <figcaption>A video of chefs in action and the dishes being prepared.</figcaption>
             </figure>
@@ -154,34 +162,34 @@
             <h2>Background Music Playlist</h2>
             <ol>
                 <li>
-                  <figure>
-                    <audio controls loop>
-                        <source src="audios/ConfidentKurt-TrackTribe.mp3" type="audio/mpeg">
-                        Confident Kurt - TrackTribe
-                    </audio>
-                    <figcaption>ConfidentKurt-TrackTribe</figcaption>
-                  </figure>
+                    <figure>
+                        <audio controls loop>
+                            <source src="audios/ConfidentKurt-TrackTribe.mp3" type="audio/mpeg">
+                            Confident Kurt - TrackTribe
+                        </audio>
+                        <figcaption>ConfidentKurt-TrackTribe</figcaption>
+                    </figure>
                 </li>
                 <li>
-                  <figure>
-                    <audio controls loop>
-                        <source src="audios/FineDining-TrackTribe.mp3" type="audio/mpeg">
-                        Fine Dining - TrackTribe
-                    </audio>
-                    <figcaption>Fine Dining - TrackTribe</figcaption>
-                  </figure>
+                    <figure>
+                        <audio controls loop>
+                            <source src="audios/FineDining-TrackTribe.mp3" type="audio/mpeg">
+                            Fine Dining - TrackTribe
+                        </audio>
+                        <figcaption>Fine Dining - TrackTribe</figcaption>
+                    </figure>
                 </li>
                 <li>
-                  <figure>
-                    <audio controls loop>
-                        <source src="audios/LostLounge-TrackTribe.mp3" type="audio/mpeg">
-                        Lost Lounge - TrackTribe
-                    </audio>
-                    <figcaption>Lost Lounge - TrackTribe</figcaption>
-                  </figure>
+                    <figure>
+                        <audio controls loop>
+                            <source src="audios/LostLounge-TrackTribe.mp3" type="audio/mpeg">
+                            Lost Lounge - TrackTribe
+                        </audio>
+                        <figcaption>Lost Lounge - TrackTribe</figcaption>
+                    </figure>
                 </li>
-              </ol>
-              
+            </ol>
+
         </section>
 
         <hr>
@@ -206,13 +214,14 @@
                     </ul>
                 </address>
             </div>
-            
-            
+
+
             <div id="awards">
                 <h3>Awards</h3>
                 <ul>
                     <li>Best of the City - awarded by the city's magazine for the restaurant's overall excellence</li>
-                    <li>Certificate of Excellence - awarded by a popular travel review website based on consistently high ratings and reviews from customers.</li>
+                    <li>Certificate of Excellence - awarded by a popular travel review website based on consistently
+                        high ratings and reviews from customers.</li>
                     <li>Best New Restaurant - awarded by the city's restaurant guide</li>
                 </ul>
             </div>
@@ -220,16 +229,18 @@
             <div id="suppliers">
                 <h3>Suppliers</h3>
                 <p>
-                    Restaurant XYZ takes pride in using only the freshest and highest quality ingredients for their dishes.
+                    Restaurant XYZ takes pride in using only the freshest and highest quality ingredients for their
+                    dishes.
                     To ensure this, they have partnered with local farms and fisheries for their produce and seafood.
                     You can learn more about their suppliers by clicking on the links below:
                 </p>
                 <ul>
-                    <li>Local farm : <a href="https://www.farmfreshproduce.com" target="_blank">www.farmfreshproduce.com</a></li>
+                    <li>Local farm : <a href="https://www.farmfreshproduce.com"
+                            target="_blank">www.farmfreshproduce.com</a></li>
                     <li>Fishery : <a href="https://www.freshseafood.com" target="_blank">www.freshseafood.com</a></li>
                 </ul>
-          </div>
-            
+            </div>
+
         </section>
     </main>
 
@@ -248,7 +259,7 @@
             </li>
             <li>Contact Information
                 <address>
-                    <ul type="square">
+                    <ul>
                         <li>Phone: <span><a href="tel:555-123-4567">555-123-4567</a></span></li>
                         <li>Email: <span><a href="mailto:info@ourrestaurant.com">info@ourrestaurant1.com</a></span></li>
                         <li>Address: <span>209, Neungdong-ro, Gwangjin-gu, Seoul, Republic of Korea</span></li>
@@ -256,20 +267,30 @@
                 </address>
             </li>
             <li>Social Media Links
-                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="images/logos/facebook.png"
-                        alt="facebook" height="50" /></a>
-                <a href="https://www.instagram.com/?hl=ko" target="_blank"><img src="images/logos/instagram.png"
-                        alt="instagram" height="50" /></a>
-                <a href="https://www.youtube.com/" target="_blank"><img src="images/logos/youtube.png" alt="youtube"
-                        height="50"></a>
-                <a href="https://twitter.com/?lang=ko" target="_blank"><img src="images/logos/twitter.png" alt="twitter"
-                        height="50"></a>
+                <ul>
+                    <li>
+                        <a href="https://ko-kr.facebook.com/" target="_blank"><img src="images/logos/facebook.png"
+                                alt="facebook" height="50"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/?hl=ko" target="_blank"><img src="images/logos/instagram.png"
+                                alt="instagram" height="50"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank"><img src="images/logos/youtube.png"
+                                alt="youtube" height="50"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/?lang=ko" target="_blank"><img src="images/logos/twitter.png"
+                                alt="twitter" height="50"></a>
+                    </li>
+                </ul>
             </li>
 
         </ul>
 
 
-        <p>2023 &#169; all rights. The Best Restaurant in Town</p>
+        <p>2023 &#169; all rights. Restaurant XYZ</p>
     </footer>
 </body>
 
