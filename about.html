@@ -11,7 +11,14 @@
 
 <body>
     <header>
-        <a href="/"><img src="images/logos/logo.svg" alt="The Best Restaurant in Town" height="150" /></a>
+        <a href="/">
+            <picture>
+                <source type="image/svg" srcset="logo.svg">
+                <source type="image/jpg" srcset="logo.jpg">
+                <source type="image/png" srcset="logo.png">
+                <img src="images/logos/logo.svg" alt="The Best Restaurant in Town" height="150" />
+            </picture>
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
